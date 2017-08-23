@@ -10,5 +10,6 @@ public class ThreadConstant {
     /**
      * 数量
      */
-    public static final int NUM = 4;
+//    public static final int NUM = 4;
+    public static final int NUM = 100;
 }

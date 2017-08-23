@@ -8,9 +8,9 @@ package com.example.concurrent;
  */
 class SimpleRunnable implements Runnable {
     private int countDown = 5;
-    private long id;
 
     private String print() {
+        long id = Thread.currentThread().getId();
         return "当前线程" + id + "_" + (countDown > 0 ? countDown : "计时结束！") + ";";
     }
 
@@ -21,9 +21,5 @@ class SimpleRunnable implements Runnable {
             //对线程调度器的一种建议  可以将CPU从一个线程切换到另一个线程  这个地方使用的目的是输入更明显 不同线程一个一个的输出
             Thread.yield();
         }
-    }
-
-    void setId(long threadId) {
-        this.id = threadId;
     }
 }
