@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 public class FixThreadPool {
     public static void main(String[] args) {
         //指定创建线程的数量为4
+
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         for (int i = 0; i < ThreadConstant.NUM; i++) {
             SimpleRunnable simpleRunnable = new SimpleRunnable();
