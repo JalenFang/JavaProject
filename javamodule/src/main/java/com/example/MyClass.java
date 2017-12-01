@@ -25,5 +25,10 @@ public class MyClass {
 
         byte h = 'Z';
         System.out.println(" " + h);
+
+        int aScore = 80;
+        int bScore = 0;
+        aScore = bScore;
+        System.out.println("aScore = " + aScore);
     }
 }
